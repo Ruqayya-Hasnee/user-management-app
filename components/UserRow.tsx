@@ -29,7 +29,8 @@ const UserRow: React.FC<UserRowProps> = ({ users }) => {
       columns={columns}
       rowKey="id"
       pagination={{ pageSize: 5 }}
-      className="shadow rounded-md overflow-hidden"
+      scroll={{ x: true }}
+      className="shadow rounded-md overflow-auto "
     />
   );
 };
